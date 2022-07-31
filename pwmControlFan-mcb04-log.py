@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 #############################################################################
-# Filename    : pwmControlFan-mcb04.py
-# Description : Control the fan on the Deskpi Pro
-# Author      : Deskpi Team, modified by Mike Bartlet
-# modification: 18/3/2022
-version = "1.4"
+# Filename    : pwmControlFan-mcb04-log.py
+# Description : Control the fan on the Deskpi Pro, with logs
+# Author      : Deskpi Team, modified by Mike Bartlet, add fan.log by QiangGe
+# modification: 31/7/2022
+version = "1.5"
 ########################################################################
 import serial
 import time
