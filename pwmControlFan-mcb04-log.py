@@ -41,9 +41,9 @@ def readCPU_temp():
     return cpu_temp
 
 def getTimeStr():
-    # 获得当前时间时间戳
+    # Get current time
     now = int(time.time())
-    #转换为其他日期格式,如:"%Y-%m-%d %H:%M:%S"
+    # Change to string in format:"%Y-%m-%d %H:%M:%S"
     timeArray = time.localtime(now)
     timeStr = time.strftime("%Y-%m-%d %H:%M:%S", timeArray)
 
@@ -59,12 +59,12 @@ serPort = openSerPort()
  
 if serPort != "ttyUSB0 Error":
     
-    # 写入服务启动标志
+    # Write the service start message to fan.log
     writeFanLog("--------------------------------------------------------\n")
     writeFanLog(getTimeStr() + ", Deskpi Fan service started!\n")
     writeFanLog("--------------------------------------------------------\n")
     
-    # 初始化风扇状态为0(关闭)
+    # Initialize the fan status to 0(turn off)
     fanStatus = 0
     
     while True:
